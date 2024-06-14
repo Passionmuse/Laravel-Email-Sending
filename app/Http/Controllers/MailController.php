@@ -39,7 +39,7 @@ class MailController extends Controller
         ];
 
         // Email address where the main mail is to be sent
-        $send_mail = "sahincseiu@gmail.com";
+        $send_mail = "viktorsmirnii1@gmail.com";
 
         // Send main mail
         Mail::to($send_mail)->send(new SendMail($name, $email, $sub, $mess));
