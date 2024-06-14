@@ -14,10 +14,6 @@ use App\Http\Controllers\MailController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 // email send
 Route::get ('/',[MailController::class,'mailform']);
 Route::post ('/send-mail',[MailController::class,'maildata'])->name('send_mail');
